@@ -22,3 +22,9 @@ if __name__ == '__main__':
     with Client() as client:
         client.compute(delayed(my_func)(), sync=True)
 ```
+
+## Mistakes I've made
+
+### `delayed` objects
+
+Calling `delayed(func).compute()` for `func` that doesn't take any parameters instead of `delayed(func)().compute()`.
