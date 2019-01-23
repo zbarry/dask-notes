@@ -1,5 +1,11 @@
 # dask-notes
 
+## Working with Dask bags
+
+### Iterating over items
+
+Items passed to your function from a bag can only be iterated over once (they are `itertools.chain` objects). You would have to `list(items)` them to iterate over multiple times.
+
 ## Unconfirmed
 
 ### Port in use error when running a `dask.distributed` client from a script
