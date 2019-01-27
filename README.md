@@ -1,5 +1,11 @@
 # dask-notes
 
+## High performance computing (cluster) environments
+
+Try out [Dask-Jobqueue](https://github.com/dask/dask-jobqueue) for computing your graphs on a cluster with minimal code modification.
+
+See [this post](http://www.ericmjl.com/blog/2018/10/11/parallel-processing-with-dask-on-gridengine-clusters/) by [@ericmjl](https://github.com/ericmjl) for a tutorial on how to use this package.
+
 ## Working with Dask bags
 
 ### Iterating over items
